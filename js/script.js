@@ -74,8 +74,8 @@ $(document).on('ready', function() {
         timeoutDuration: 8000
       },
       responsive: true,
-      // prev: '.slider_prev',
-      // next: '.slider_next',
+       //prev: '.slider_prev',
+       //next: '.slider_next',
       pagination: '.slider_pagination',
       width: '100%',
       scroll: {
