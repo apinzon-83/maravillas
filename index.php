@@ -49,11 +49,19 @@
       <div class="email1"><a href="mailto:ventas@maravillasdeleden.com">ventas@maravillasdeleden.com</a></div>
       <div class="phone1">(414) 2730959</div>
       <div class="social_wrapper">
+        <ul>
+
+        </ul>
         <ul class="social clearfix">
+<<<<<<< HEAD:index.php
           <!-- <li class="fa fa-sign-in" aria-hidden="true"><a href="login.php">Ingresa</a></li> -->
           <!-- <li class="fa fa-sign-out">Registrate</li> -->
           <li ><a style="color: #acacac; font-size: 11pt;" href="login.php">Ingresa</a></li>
           <li ><a style="color: #acacac; font-size: 11pt;" href="registration_form.php">Registrate</a></li>
+=======
+          <li class="fa fa-sign-in" aria-hidden="true">Ingresa</li>
+          <li class="fa fa-sign-out">Registrate</li>
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
           <li><a href="https://www.facebook.com/maravillasdeleden/"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/maravillas_eden"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCCBXBbXfMHm71qW4MfnsmNQ"><i class="fa fa-youtube"></i></a></li>
@@ -88,7 +96,8 @@
             <li class="active"><a href="index.php">Inicio</a></li>
             <li><a href="about.html">Nosotros</a></li>
             <li><a href="gallery.html">Gallería</a></li>
-            <li class="sub-menu sub-menu-1"><a href="#">Páginas<em></em></a>
+            <li><a href="flights.html">Viajes</a></li>
+            <!-- <li class="sub-menu sub-menu-1"><a href="#">Viajes<em></em></a>
               <ul>
                 <li><a href="flights.html">Vuelos</a>
                   <ul>
@@ -122,7 +131,7 @@
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
             <li><a href="left-blog.html">Blog</a>
               <ul>
@@ -155,8 +164,8 @@
                     <li>
                       <div class="slider">
                         <div class="slider_inner">
-                          <div class="txt1"><span>Welcome To Our</span></div>
-                          <div class="txt2"><span>TRAVEL AGENCY</span></div>
+                          <div class="txt1"><span>Bienvenido a </span></div>
+                          <div class="txt2"><span>Maravillas del Eden</span></div>
                           <div class="txt3"><span>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod.</span></div>
                         </div>
                       </div>
@@ -966,7 +975,11 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
     <div class="row">
       <div class="col-sm-3">
         <div class="logo2_wrapper">
+<<<<<<< HEAD:index.php
           <a href="index.php" class="logo2">
+=======
+          <a href="index-2.html" class="logo2">
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
             <img src="images/logox.png" alt="" class="img-responsive">
           </a>
         </div>
@@ -1025,8 +1038,11 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
   </div>
 </div>
 </div>
+<<<<<<< HEAD:index.php
 <div >
 
+=======
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
 <div class="row">
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: 90%;">
@@ -1130,6 +1146,7 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
         </p>
         <p class="text-justify">
           Queremos que te sientas seguro al usar este sitio web para hacer reservaciones de hoteles y viajes, de modo que tenemos el compromiso de proteger la información que reunimos. Aunque ningún sitio web puede garantizar la seguridad, hemos implementado procedimientos administrativos, técnicos y de seguridad física adecuados para ayudar a proteger la información personal que nos proporcionas. Por ejemplo, únicamente los empleados autorizados tienen permitido obtener acceso a la información personal y solo pueden hacerlo para funciones comerciales autorizadas. Además, al transmitir tu información personal delicada entre tu sistema y el nuestro utilizamos un método de cifrado, y empleamos firewalls y sistemas de detección de intrusiones como ayuda para prevenir que personas no autorizadas obtengan acceso a tu información.
+<<<<<<< HEAD:index.php
 
           Para ayudarnos a reconocer a tu navegador como un visitante previo y para guardar y recordar cualquier preferencia que hubiere sido seleccionada mientras tu navegador nos visitaba. Por ejemplo, si te inscribes en nuestro sitio, podemos usar cookies para recordar tu información de registro, para que no tengas que registrarte en nuestro sitio cada vez que nos visites. Asimismo, podemos almacenar tu contraseña en una cookie, en caso que hayas seleccionado la opción “Mantener la sesión abierta”. Toma en cuenta que por razones de seguridad la identificación de los socios, contraseñas y cualquier otra información almacenada en las cookies se encuentra encriptada. Salvo que te des de alta con nosotros, estas cookies no contendrán información personal.
           Para ayudarnos a personalizar el contenido y publicidad proporcionada en este y otros sitios. Por ejemplo, cuando ingresas a una página en nuestro sitio, automáticamente se establece una cookie, ya sea por nosotros, nuestros proveedores o socios comerciales, para reconocer tu navegador mientras navegas por internet, para presentarte información y publicidad basada en tus intereses aparentes. Para mayor información relacionada con nuestras prácticas de publicidad en línea y tus opciones al respecto, consulta la sección.
@@ -1197,7 +1214,75 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
           Si tienes dudas respecto a la Política de privacidad (o tus reservaciones o compras de viajes), contáctanos en ventas@maravillasdeleden.com
           Esta Política de privacidad está en vigor desde el 04/11/2017.
         </p>
+=======
 
+          Para ayudarnos a reconocer a tu navegador como un visitante previo y para guardar y recordar cualquier preferencia que hubiere sido seleccionada mientras tu navegador nos visitaba. Por ejemplo, si te inscribes en nuestro sitio, podemos usar cookies para recordar tu información de registro, para que no tengas que registrarte en nuestro sitio cada vez que nos visites. Asimismo, podemos almacenar tu contraseña en una cookie, en caso que hayas seleccionado la opción “Mantener la sesión abierta”. Toma en cuenta que por razones de seguridad la identificación de los socios, contraseñas y cualquier otra información almacenada en las cookies se encuentra encriptada. Salvo que te des de alta con nosotros, estas cookies no contendrán información personal.
+          Para ayudarnos a personalizar el contenido y publicidad proporcionada en este y otros sitios. Por ejemplo, cuando ingresas a una página en nuestro sitio, automáticamente se establece una cookie, ya sea por nosotros, nuestros proveedores o socios comerciales, para reconocer tu navegador mientras navegas por internet, para presentarte información y publicidad basada en tus intereses aparentes. Para mayor información relacionada con nuestras prácticas de publicidad en línea y tus opciones al respecto, consulta la sección.
+        </p>
+        <p class="text-justify">
+          <strong>Exhibición de publicidad/Tus opciones.</strong>
+        </p>
+        <p class="text-justify">
+          Para investigar y medir la efectividad de funciones, ofrecimientos, publicidad y comunicaciones vía correo electrónico (para saber qué correos son abiertos por ti y qué acciones tomar).
+
+            La sección de Ayuda de la mayoría de los navegadores te indicarán qué debes hacer para prevenir que el navegador acepte nuevas cookies, para que el navegador te avise cuando recibas una nueva cookie, o bien, para inhabilitar las cookies. Toma en cuenta que si te niegas a recibir cookies, es posible que no tengas acceso a la mayoría de las herramientas de viajes de nuestro sitio.
+
+            Además de las cookies, utilizamos en el sitio Objetos locales compartidos (Local shared objects), también conocidos como “flash cookies”. Estos son utilizados para mejorar tu experiencia como usuario, por ejemplo, para almacenar tus preferencias y configuraciones de usuario, tales como tu configuración de volumen/silencio, y en relación con animaciones en nuestro sitio. Los Objetos locales compartidos son similares a las cookies, pero pueden almacenar datos más complejos que el simple texto. Por sí solos, no pueden hacer nada con los datos de tu computadora. Como otras cookies, solo pueden tener acceso a información específica que tú has proporcionado en este sitio, y a la que no pueden tener acceso otros sitios. Para conocer más acerca de las “flash cookies” o como desactivarlas, haz clic en el siguiente vínculo: http://www.adobe.com/mx/#
+
+            Este sitio también puede usar web beacons (también conocidos como gif claros, etiqueta de pixel o web bugs), que son gráficos muy pequeños con un identificado único, con un funcionamiento similar al de las cookies, que son colocados en el código de una página web. Nosotros utilizamos web beacons para monitorear los patrones de tráfico de un usuario de una página a otra dentro de nuestro sitio, para enviar o comunicarse con cookies, para entender si entraste a nuestra página desde un anuncio publicitario en línea exhibido en el sitio de un tercero, así como para mejorar el funcionamiento del sitio. Asimismo, podemos permitir a nuestros proveedores utilizar web beacons para ayudarnos a conocer qué correos electrónicos han sido abiertos, monitorear el número de visitas al sitio y las acciones realizadas en nuestro sitio. Esto nos ayuda a medir la efectividad de nuestro contenido y ofrecimientos.
+
+            Si tienes dudas respecto al uso que le damos a las cookies u otras tecnologías, comunícate con nosotros mediante correo electrónico a la dirección que aparece más adelante.
+
+            Exhibición de publicidad/Tus opciones
+
+            Datos recopilados por socios comerciales y redes de anunciantes para brindarte publicidad relevante.
+
+            Los anuncios publicitarios que ves en este sitio son brindados por nosotros o por nuestros proveedores de servicios. También permitimos que terceros recopilen información de tus actividades en línea a través de cookies y otras tecnologías. Los terceros incluyen (1) nuestra filial corporativa y socia Maravillasdeleden.com ; (2) socios comerciales, que recopilan información cuando visualizas o interactúas con unos de sus anuncios publicitarios en nuestro sitio; y (3) redes de anunciantes que recopilan información relacionada con tus intereses cuando visualizas o interactúas con unos de sus anuncios publicitarios colocados en diversos sitios. La información recopilada por estos terceros es utilizada para hacer predicciones de tus características, intereses o preferencias, así como para exhibir o publicar publicidad hecha a la medida de tus intereses aparentes. Nosotros no permitimos que estos terceros recopilen información personal tuya (como tu dirección de correo electrónico) en nuestro sitio, así como tampoco compartimos tu información personal con dichos terceros.
+
+            Toma en cuenta que nosotros no tenemos acceso ni controlamos las cookies y demás herramientas tecnológicas utilizadas por los terceros para recopilar información de tus intereses. Las prácticas de los terceros en materia de información no están amparadas por la presente Política de privacidad. Algunas de estas empresas son miembros de la Iniciativa de publicidad en red (“Network Advertising Initiative”), que ofrece un sitio único para seleccionar la opción de no recibir publicidad de sus miembros. Para mayor información, puedes consultar el siguiente vínculo: http://www.bluekai.com/registry-es/
+
+            Datos recopilados por empresas que operan intercambios basados en cookies para brindarte publicidad relevante.
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
+
+            Como otras empresas que operan en línea, maravillasdeleden.com participa en intercambios basados en cookies mediante los cuales se recopila información anónima de tu comportamiento de navegación a través de cookies y otras tecnologías y se segmenta en diferentes temas de interés (como los viajes). Posteriormente, estos temas de interés se comparten con terceros, incluyendo anunciantes y redes de anunciantes, para que puedan desarrollar anuncios a la medida de tus posibles intereses. Nosotros no compartimos con estos terceros información personal de usted (como tu dirección de correo electrónico) y no permitimos que dichos terceros recopilen información personal tuya en nuestro sitio.
+        </p>
+        <p class="text-justify">
+          <strong>Cómo protegemos tu información</strong>
+        </p>
+        <p class="text-justify">
+          Queremos que te sientas seguro de usar este sitio para hacer tus reservaciones de viajes, por lo que estamos comprometidos en salvaguardar la información que recopilamos. Si bien ningún sitio web puede garantizar la seguridad, hemos implementado procedimientos de seguridad de carácter administrativo, técnico y material, necesarios para salvaguardar la información personal que nos proporciones. Por ejemplo, solo los empleados autorizados pueden tener acceso a tu información personal y solo lo pueden hacer por razones específicas dentro sus funciones. Adicionalmente, utilizamos encriptación cuando transmitimos tu información personal entre tu sistema y el nuestro, y utilizamos firewalls y sistemas de detección de intrusos para prevenir que personas no autorizadas tengan acceso a tu información personal.
+        </p>
+        <p class="text-justify">
+          <strong>Privacidad de los menores</strong>
+        </p>
+        <p class="text-justify">
+          Este es un sitio destinado a una audiencia general y no ofrece servicios destinados a menores de edad. En el supuesto que tengamos conocimiento que un menor de 13 años nos envía información personal, utilizaremos esa información exclusivamente para informarle a ese menor que requerimos del consentimiento de sus padres para recibir su información personal.
+        </p>
+        <p class="text-justify">
+          <strong>Vínculos externos</strong>
+        </p>
+        <p class="text-justify">
+          En el supuesto que este sitio contenga un vínculo a otros sitios, estos no operan al amparo de la presente Política de privacidad. Recomendamos que revises las normas de privacidad de tales sitios para efectos de conocer cuáles son sus procedimientos para recopilar, usar y divulgar información personal.
+        </p>
+        <p class="text-justify">
+          <strong>Visitar nuestro sitio desde fuera de lo México</strong>
+        </p>
+        <p class="text-justify">
+          Considera que si visitas nuestro sitio desde fuera de México, es posible que tu información sea transferida, almacenada y procesada en México, lugar en el que se encuentran ubicados nuestros servidores y opera nuestra base de datos principal. Es posible que las leyes de México y otros países en materia de protección de datos y otras materias, no sean tan completas como las de tu país; sin embargo, de cualquier forma ten la certeza que nosotros adoptamos las medidas para salvaguardar tu privacidad. Por el hecho de usar nuestros servicios, estás consciente que tu información puede ser transferida a nuestras instalaciones y a la de aquellos terceros con los que compartimos información en los términos de las presentes Políticas.
+        </p>
+        <p class="text-justify">
+          <strong>Cambios a la Política de privacidad</strong>
+        </p>
+        <p class="text-justify">
+          En el futuro, podremos actualizar esta Política de privacidad. Te notificaremos respecto a modificaciones sustanciales de la Política de privacidad, ya sea mediante un correo electrónico a la dirección que nos hayas proporcionado o a través de un aviso en un lugar visible en nuestro sitio.
+        </p>
+        <p class="text-justify">
+          <strong>Cómo comunicarse con nosotros</strong>
+        </p>
+        <p class="text-justify">
+          Si tienes dudas respecto a la Política de privacidad (o tus reservaciones o compras de viajes), contáctanos en ventas@maravillasdeleden.com
+          Esta Política de privacidad está en vigor desde el 04/11/2017.
+        </p>
 
 
 
@@ -1209,13 +1294,29 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
   </div>
 </div>
 
+<<<<<<< HEAD:index.php
+</div>
+=======
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
 
 
+
+
+<<<<<<< HEAD:index.php
 </div>
 
+=======
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
 <script src="js/bootstrap.min.js"></script>
 </body>
 

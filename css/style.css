@@ -22,6 +22,29 @@
 }
 
 
+<<<<<<< HEAD
+=======
+/* Global properties ======================================================== */
+
+
+
+.parent {
+    position: relative;
+    float: left;
+    height: 100%
+    width: 100%;
+    overflow: hidden;
+}
+.child {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: calc(100% + 20px);
+    overflow-y: auto;
+}
+
+
+>>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e
 a[href^="tel:"] { color: inherit; text-decoration: none;}
 ::selection{ background:#1cbbb4!important; color:#fff}
 ::-moz-selection{ background:#1cbbb4!important; color:#fff}
