@@ -1,33 +1,27 @@
 /* GOOGLE FONTS */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-/*------------------------------------------------------------------
-[Table of contents]
+.tit_log{
+  color: #acacac;
+  font-size: 11pt;
+}
 
-1. Body
-2. Header / .top1_wrapper
-3. Navigation / .top2_wrapper
-4. Slider / #slider_wrapper
-5. Tabs / #front_tabs
-6. Content / #why1, #parallax1, #popular_cruises1, #happy1, #partners
-7. Before Footer / .bot1_wrapper
-8. Footer / .bot2_wrapper
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[Color codes]
-
-Background:	#ffffff (white)
-Content:	#1e1e1e (light black)
-h1,h2,h3:	#464646 (Dark Black)
-Footer:		#b5cede (dark black)
-
-a (standard):	#fb000d (Pale Red)
-a (hover):	#fb000d (light blue)
--------------------------------------------------------------------*/
+.parent {
+    position: relative;
+    float: left;
+    height: 100%
+    width: 100%;
+    overflow: hidden;
+}
+.child {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: calc(100% + 20px);
+    overflow-y: auto;
+}
 
 
-/* Global properties ======================================================== */
 a[href^="tel:"] { color: inherit; text-decoration: none;}
 ::selection{ background:#1cbbb4!important; color:#fff}
 ::-moz-selection{ background:#1cbbb4!important; color:#fff}
