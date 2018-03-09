@@ -1,4 +1,70 @@
 
+function validarNombre(nombre){
+  valido = document.getElementById('nombreOK');
+  //Creamos un objeto
+  object=document.getElementById(nombre);
+  valueForm=object.value;
+
+  // Patron para el correo
+  var patron=/^[a-zA-Z áéíóúüÁÉÍÓÜÚ]{3,15}$/;
+  if(valueForm.search(patron)==0)
+  {
+    //Mail correcto
+    object.style.color="#5cb85c";
+    valido.innerText = "Nombre válido";
+
+    return;
+  }
+    //Mail incorrecto
+    object.style.color="#f00";
+    valido.innerText = "Ingrese un nombre valido";
+    return;
+
+}
+
+function validarapellidoP(apellidoP) {
+  valido = document.getElementById('apellidoPOK');
+  //Creamos un objeto
+  object=document.getElementById(apellidoP);
+  valueForm=object.value;
+
+  // Patron para el correo
+  var patron=/^[a-zA-Z áéíóúüÁÉÍÓÜÚ]{4,15}$/;
+  if(valueForm.search(patron)==0)
+  {
+    //Mail correcto
+    object.style.color="#5cb85c";
+    valido.innerText = "Apellido válido";
+
+    return;
+  }
+    //Mail incorrecto
+    object.style.color="#f00";
+    valido.innerText = "Ingrese un Apellido válido";
+    return;
+}
+
+function validarapellidoM(apellidoM) {
+  valido = document.getElementById('apellidoMOK');
+  //Creamos un objeto
+  object=document.getElementById(apellidoM);
+  valueForm=object.value;
+
+  // Patron para el correo
+  var patron=/^[a-zA-Z áéíóúüÁÉÍÓÜÚ]{4,15}$/;
+  if(valueForm.search(patron)==0)
+  {
+    //Mail correcto
+    object.style.color="#5cb85c";
+    valido.innerText = "Apellido válido";
+
+    return;
+  }
+    //Mail incorrecto
+    object.style.color="#f00";
+    valido.innerText = "Ingrese un Apellido válido";
+    return;
+}
 
 function validateMail(email){
   valido = document.getElementById('emailOK');
@@ -18,7 +84,7 @@ function validateMail(email){
 	}
   	//Mail incorrecto
   	object.style.color="#f00";
-    valido.innerText = "email incorrecto";
+    valido.innerText = "Ingrese un email válido";
     return;
 }
 
@@ -38,6 +104,50 @@ function igualEmail(){
 
 
 
+function validarusuario(usuario) {
+  valido = document.getElementById('usuarioOK');
+  //Creamos un objeto
+  object=document.getElementById(usuario);
+  valueForm=object.value;
+
+  // Patron para el correo
+  var patron=/^[a-zA-Z0-9_-]{4,15}$/;
+  if(valueForm.search(patron)==0)
+  {
+    //Mail correcto
+    object.style.color="#5cb85c";
+    valido.innerText = "Usuario válido";
+
+    return;
+  }
+    //Mail incorrecto
+    object.style.color="#f00";
+    valido.innerText = "Ingrese un Usuario válido";
+    return;
+}
+
+
+function validarPassword(password) {
+  valido = document.getElementById('passwordOK');
+  //Creamos un objeto
+  object=document.getElementById(password);
+  valueForm=object.value;
+
+
+  var patron=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+  if(valueForm.search(patron)==0)
+  {
+    //Mail correcto
+    object.style.color="#5cb85c";
+    valido.innerText = "Password válido";
+
+    return;
+  }
+    //Mail incorrecto
+    object.style.color="#f00";
+    valido.innerText = "Ingrese un Password válido";
+    return;
+}
 
 function igualPass(){
    	password = document.f1.password.value
@@ -70,7 +180,7 @@ function validarTelefono(telefono){
   }
     //Mail incorrecto
     object.style.color="#f00";
-    valido.innerText = "telefono incorrecto";
+    valido.innerText = "Ingrese un telefono válido";
     return;
 
 }
@@ -87,4 +197,12 @@ function valida(e){
     patron =/[0-9]/;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
+}
+
+function validar(e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+  if (tecla==8) return true;
+    patron =/[A-Za-z\s]/;
+    te = String.fromCharCode(tecla);
+    return patron.test(te);
 }

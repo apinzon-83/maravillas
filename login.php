@@ -124,7 +124,7 @@
 
       <div class="line"></div>
       <div class="form-group">
-          <input type="text" id="username" name="username" placeholder="Usuario" required>
+          <input type="text" id="username" name="username" placeholder="Email" required>
       </div>
       <div class="form-group">
           <input type="password" id="password" name="password" placeholder="Contraseña" required>

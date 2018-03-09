@@ -1,22 +1,17 @@
+
 <?php
 
-$host_db = "localhost";
-$user_db = "root";
-$pass_db = "root";
-$db_name = "maravilladb";
-$tbl_name = "Usuarios";
 
-// $form_pass = $_POST['password'];
+		$mysqli = new MySQLi("localhost", "root","root", "maravilladb");
+		if ($mysqli -> connect_errno) {
+			die( "Fallo la conexión a MySQL: (" . $mysqli -> mysqli_connect_errno()
+				. ") " . $mysqli -> mysqli_connect_error());
+		}
+		else
+			//echo "Conexión exitossa!";
 
-// $hash = password_hash($form_pass, PASSWORD_BCRYPT);
-
-$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
-
-if ($conexion->connect_error) {
-die("La conexion falló: " . $conexion->connect_error);
-}
-
-
-
-
+//	$link =mysqli_connect("localhost","root","");
+//	if($link){
+//		mysqli_select_db($link,"academ");
+//	}
 ?>

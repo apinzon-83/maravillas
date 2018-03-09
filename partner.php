@@ -52,56 +52,6 @@
 
 </head>
 <body>
-  <?php
-          require_once 'app/modelo/conexion.php';
-          require 'app/modelo/usuario.php';
-          require 'app/controlador/validadorFormularios.php';
-
-
-          // Inicializamos las varibles que se usaran para los campos de texto del formulario.
-          $nombre="";
-          $apellidoP="";
-          $apellidoM="";
-          $email="";
-          $email2="";
-          $usuario="";
-          $password="";
-          $password2="";
-          $telefono="";
-          $genero="";
-          $enteraste="";
-          $quiero="";
-
-          if(isset($_POST['registrar'])){
-              $conexion = new mysqli($servidor, $usuarioBD, $passwordBD, $baseDatos);
-              $nuevoUsuario = new Usuario($_POST['nombre'],$_POST['apellidoP'],$_POST['apellidoM'],$_POST['email'],$_POST['email2'],$_POST['$usuario'],$_POST['password'],$_POST['password2'],$_POST['telefono'],$_POST['genero'],$_POST['enteraste'],$_POST['quiero']);
-              $gestor = new GestorUsuarios($conexion);
-
-              // Si todos los campos del usuario son correctos y se realiza la insercion del usuario con exito
-              // se redireciona a la pagina correspondiente.
-              if (($gestor->validarUsuario($nuevoUsuario)) && ($gestor->insertarUsuario($nuevoUsuario))) {
-                  $conexion->close();
-                  header("Location:formulario_login.php");
-              }
-              else{
-                  // Si algo falla se recuperan los datos introducidos por el usuario
-                  // para que no tenga que reescribir los que estuviesen correctos.
-                  $nombre=$_POST['nombre'];
-                  $apellidoP=$_POST['apellidoP'];
-                  $apellidoM=$_POST['apellidoM'];
-                  $email=$_POST['email'];
-                  $email2=$_POST['email2'];
-                  $usuario=$_POST['usuario'];
-                  $password=$_POST['password'];
-                  $password2=$_POST['password2'];
-                  $telefono=$_POST['telefono'];
-                  $genero=$_POST['genero'];
-                  $enteraste=$_POST['enteraste'];
-                  $quiero=$_POST['quiero'];
-              }
-          }
-      ?>
-
 <div id="main">
 
 <div class="top1_wrapper">
@@ -171,7 +121,7 @@
   <form class="form-inline" style="width:90%;" id="register_form" name="f1" method="post" action="#">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h2>Registro</h2>
+          <h2>Registro de Partner</h2>
         </div>
     </div>
     <div class="line" style="width:90%;"></div>
@@ -305,8 +255,8 @@
           </a>
       </div>
       <div class="col-md-4 col-md-offset-2">
-          <a class="noline" href="partner.php">
-            ¿Deseas ser nuestro partner?
+          <a class="noline" href="registration_form.php">
+            ¿Deseas reservar?
           </a>
       </div>
     </div>
@@ -404,7 +354,7 @@ $("#register_form").submit(function() {
                 var data1 = $('#register_form').serialize();
                 $.ajax({
                     type: "POST",
-                    url: "registerUser.php",
+                    url: "registerAdmin.php",
                     data: data1,
                     success: function(msg) {
                         console.log(msg);

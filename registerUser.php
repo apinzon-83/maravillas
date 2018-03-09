@@ -6,9 +6,8 @@
  $db_name = "maravilladb";
  $tbl_name = "Usuarios";
 
- $form_pass = $_POST['password'];
-
- $hash = password_hash($form_pass, PASSWORD_BCRYPT);
+ //$form_pass = $_POST['password'];
+ //$hash = password_hash($form_pass, PASSWORD_BCRYPT);
 
  $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
@@ -24,27 +23,27 @@
  $result = $conexion->query($buscarUsuario);
 
  $count = mysqli_num_rows($result);
- // echo $buscarUsuario;
- // echo $count;
+
  if ($count == 1) {
- // echo "<br />". "El correo que quieres ingresar ya se encuentra registrado" . "<br />";
+
 echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
  echo '<script type="text/javascript">alert(\'El correo  que quieres ingresar ya se encuentra registrado\');</script>';
- // echo "<a href='../../registration_form.php'>Por favor escoga otro Nombre</a>";
- echo "<script>location.href='../../registration_form.php'</script>";
+
+ echo "<script>location.href='registration_form.php'</script>";
 
 
  }
  else{
-
+ $idrol = 'Usuario';
  $query = "INSERT INTO usuarios (idrol, nombre, apellidoP, apellidoM, usuario, password, email, telefono, genero, enteraste)
-           VALUES ('$_POST[idrol]', '$_POST[nombre]', '$_POST[apellidoP]', '$_POST[apellidoM]', '$_POST[usuario]', '$hash', '$_POST[email]', '$_POST[telefono]', '$_POST[genero]', '$_POST[enteraste]')";
+           VALUES ('$idrol', '$_POST[nombre]', '$_POST[apellidoP]', '$_POST[apellidoM]', '$_POST[usuario]', '$_POST[password]', '$_POST[email]', '$_POST[telefono]', '$_POST[genero]', '$_POST[enteraste]')";
 
  if ($conexion->query($query) === TRUE) {
 
  echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
  echo "<h4>" . "Bienvenido: " . $_POST['usuario'] . "</h4>" . "\n\n";
- echo "<h5>" . "Hacer Login: " . "<a href='login.php'>Login</a>" . "</h5>";
+ echo "<h5>"  . "<a href='login.php'>Ingresar</a>" . "</h5>";
+ echo $query;
  }
 
  else {
