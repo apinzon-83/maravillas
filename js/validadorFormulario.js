@@ -1,3 +1,5 @@
+
+
 function validateMail(email){
   valido = document.getElementById('emailOK');
 	//Creamos un objeto
@@ -5,7 +7,7 @@ function validateMail(email){
 	valueForm=object.value;
 
 	// Patron para el correo
-	var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+	var patron=/^[a-zA-Z]+([\.]?[a-zA-Z0-9_-]+)*@[a-z0-9]+([\.-]+[a-z0-9]+)*\.[a-z]{2,4}$/;
 	if(valueForm.search(patron)==0)
 	{
 		//Mail correcto

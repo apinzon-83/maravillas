@@ -43,8 +43,8 @@ echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script
  if ($conexion->query($query) === TRUE) {
 
  echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
- echo "<h4>" . "Bienvenidoss: " . $_POST['usuario'] . "</h4>" . "\n\n";
- echo "<h5>" . "Hacer Login: " . "<a href='../../login.php'>Login</a>" . "</h5>";
+ echo "<h4>" . "Bienvenido: " . $_POST['usuario'] . "</h4>" . "\n\n";
+ echo "<h5>" . "Hacer Login: " . "<a href='login.php'>Login</a>" . "</h5>";
  }
 
  else {

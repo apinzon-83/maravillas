@@ -168,7 +168,7 @@
 
 <!-- contenido login -->
 <div class="container">
-  <form class="form-inline" style="width:90%;" id="register_form" name="f1" method="post" action="/maravillas/app/modelo/registrar-usuario.php">
+  <form class="form-inline" style="width:90%;" id="register_form" name="f1" method="post" action="#">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <h2>Registro</h2>
@@ -186,13 +186,13 @@
         <div class="form-group">
           <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
           <div class="col-md-12">
-            <input type='text' id="apellidoP" name="apellidoP" placeholder="Apellido Paterno" maxlength="30" value="<?php echo $apellidoP ?>" onblur="return validarApellidoP(this.value)"/>
+            <input type='text' id="apellidoP" name="apellidoP" placeholder="Apellido Paterno" maxlength="30" value="<?php echo $apellidoP ?>" />
           </div>
         </div>
         <div class="form-group">
           <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
           <div class="col-md-12">
-            <input type='text' id="apellidoM" name="apellidoM" placeholder="Apellido Materno" maxlength="30" value="<?php echo $apellidoM ?>" onblur="return validarApellidoM(this.value)"/>
+            <input type='text' id="apellidoM" name="apellidoM" placeholder="Apellido Materno" maxlength="30" value="<?php echo $apellidoM ?>" />
 
           </div>
         </div>

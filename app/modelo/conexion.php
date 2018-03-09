@@ -2,7 +2,7 @@
 
 $host_db = "localhost";
 $user_db = "root";
-$pass_db = "";
+$pass_db = "root";
 $db_name = "maravilladb";
 $tbl_name = "Usuarios";
 
