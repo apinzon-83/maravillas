@@ -31,7 +31,7 @@ $sql2=mysqli_query($mysqli,"SELECT * FROM usuarios WHERE email = '$email'");
 			$_SESSION['username']=$f['username'];
 			$_SESSION['idrol']=$f['idrol'];
 
-       echo '<script>alert("BIENVENIDO usuario")</script> ';
+
 			header("Location: usuario.php");
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
@@ -42,7 +42,7 @@ $sql2=mysqli_query($mysqli,"SELECT * FROM usuarios WHERE email = '$email'");
 
 		echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR REGISTRESE PARA PODER INGRESAR")</script> ';
 
-		echo "<script>location.href='index.php'</script>";
+		echo "<script>location.href='../../registration_form.php'</script>";
 
 	}
 

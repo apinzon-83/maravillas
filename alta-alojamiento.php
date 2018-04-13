@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
-<title>Maravillas del Eden/Login</title>
+<title>Maravillas del Eden/alta</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,8 +44,32 @@
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <!-- fin de login -->
 
+<script type="text/javascript" src="js/validadorFormulario.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+
+
+
+
+ <script>
+ $(document).ready(function() {
+        $('select').material_select();
+      });
+  </script>
+        <!-- inject: js globals -->
+
 </head>
-<body class="front">
+<body>
+
+  <?php
+          require_once 'app/modelo/conexion.php';
+          require 'app/modelo/usuario.php';
+          require 'app/controlador/validadorFormularios.php';
+      ?>
 
 <div id="main">
 
@@ -94,7 +116,7 @@
         </button>
         <div class="navbar-collapse navbar-collapse_ collapse">
           <ul class="nav navbar-nav sf-menu clearfix">
-            <li class="active"><a href="index.php">Inicio</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="about.html">Nosotros</a></li>
             <li><a href="gallery.html">Gallería</a></li>
             <li><a href="flights.html">Viajes</a></li>
@@ -114,172 +136,158 @@
 </div>
 
 <!-- contenido login -->
-  <form class="form-horizontal" id="login_form" action="app/modelo/checklogin.php" method="POST">
-      <div class="row">
-          <div class="col-md-6 col-md-offset-2">
-            <h2>Iniciar sesión</h2>
-          </div>
-      </div>
+<!-- <div class="container">
+  <form class="form-inline " style="width:90%;" id="register_form" name="f1" method="post" action="#">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Registro</h2>
+        </div>
+    </div>
+    <div class="line" style="width:90%;"></div>
+    <div class="row">
 
-
-      <div class="line"></div>
-      <div class="form-group">
-          <input type="text" id="username" name="username" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-          <input type="password" id="password" name="password" placeholder="Contraseña" required>
-      </div>
 
       <div class="row">
-        <div class="col-md-6 col-md-offset-4">
-          <br>
-          <button id="login" type="submit" class="btn btn-lg btn-success ">
-            Entrar
-          </button>
-          <!-- <button id="signin" type="submit" class="btn btn-lg btn-success "
-           data-loading-text="Loading...">Entrar
-          </button> -->
+
+        <div class="input-field col s12">
+          <label>¿Què te gustaria dar de alta?</label>
+            <select>
+              <option value="" disabled selected>Alojamientos mas seleccionados</option>
+              <option value="1">Hotel</option>
+              <option value="2">Apartamento</option>
+              <option value="3">Hotel</option>
+              <option value="4">Cuarto</option>
+              <option value="5">Habitaciòn</option>
+            </select>
 
         </div>
       </div>
-      <br>
-      <div class="messagebox">
-          <div id="alert-message"></div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <br>
+        <button type="submit"
+            class="btn btn-lg btn-primary btn-sign-in" data-loading-text="Loading...">
+            Registrarse
+        </button>
       </div>
-      <div class="social">
-          <a href="https://api.twitter.com/oauth/authenticate?oauth_token=5IieYAAAAAAANqB0AAABYHePAg4"><img src="img/twitter.png"/></a>
-          <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=331043723706186&amp;state=9a1c02b6a3b1acd6108cbd5325cb91fc&amp;response_type=code&amp;sdk=php-sdk-5.5.0&amp;redirect_uri=http%3A%2F%2Fprojects.devlup.com%2FLoginSystemv42%2Ffacebook_connect.php&amp;scope=email"><img src="img/fb.png"/></a>
-          <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http%3A%2F%2Fprojects.devlup.com%2FLoginSystemv42%2Fgoogle_connect.php&amp;client_id=799370708448.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me&amp;access_type=offline&amp;approval_prompt=auto"><img src="img/gplus.png"/></a>
+    </div>
 
-      </div>
+    <div class="messagebox">
+        <div id="alert-message"></div>
+    </div>
+    <br>
+ </form>
 
-      <div class="row">
-        <div class="col-md-5 col-md-offset-2">
-          <a class="noline" href="forgot_form.php">
-            ¿Olvidaste la contraseña?
-          </a>
-        </div>
-        <div class="col-md-5">
-          <a class="noline" href="registration_form.php">
-              Registrarse
-          </a>
+</div> -->
 
-        </div>
-      </div>
-      <br>
-  </form>
-  <?php
-                if(!empty($_GET['error'])) {
-            ?>
-                <p class="errorUsuario">Usuario o pasword incorrectos</p>
-            <?php }
-   ?>
+<div class="row" style="width:90%;">
+    <form class="col-md-12">
+      
+    </form>
+  </div>
 
-</script>
-<!-- <script type="text/javascript">
-    (function() {
-     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-     po.src = '../../apis.google.com/js/client_plusone.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-   })();
-  </script>
+
 <script>
-  $(document).ready(function() {
-      jQuery.validator.addMethod("noSpace", function(value, element) {
-          return value.indexOf(" ") < 0 && value != "";
-      },
-  "Spaces are not allowed");
+    $(document).ready(function() {
 
+jQuery.validator.addMethod("noSpace", function(value, element) {
+ return value.indexOf(" ") < 0 && value != "";
+}, "Spaces are not allowed");
+/*jQuery.validator.addMethod("maxlength", function (value, element, param) {
+console.log('element= ' + $(element).attr('name') + ' param= ' + param )
+if ($(element).val().length > param) {
+    return false;
+} else {
+console.log($(element).val().length);
+    return true;
+}
+}, "You have reached the maximum number of characters allowed for this field.");
+*/
 
+$("#register_form").submit(function() {
 
-$("#login_form").validate({
-  onfocusout: false,
-  onkeyup: false,
-  onclick: false,
-        rules: {
-          username: {
-                    required: true,
-                    noSpace: true
+            $("#register_form").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
                     },
-          password: {
-                    required: true,
-                    minlength: 6
+                    username: {
+                        required: true,
+          noSpace: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6
+          //maxlength: 8
+                    },
+                    retype_password: {
+                        required: true,
+                        equalTo: "#inputPassword"
+                    },
+                },
+                messages: {
+                    email: {
+                        required: "Enter your email address",
+                        email: "Enter valid email address"
+                    },
+                    username: {
+                        required: "Enter Username",
+
+                    },
+                    password: {
+                        required: "Enter your password",
+                        minlength: "Password must be minimum 6 characters"
+          //maxlength: "Password must be maximum 8 characters"
+
+                    },
+                    retype_password: {
+                        required: "Enter confirm password",
+                        equalTo: "Passwords must match"
+                    },
+                },
+
+
+
+                errorPlacement: function(error, element) {
+                    error.hide();
+                    $('.messagebox').hide();
+                    error.appendTo($('#alert-message'));
+                    $('.messagebox').slideDown('slow');
+
+
+
+                },
+                highlight: function(element, errorClass, validClass) {
+                    $(element).parents('.form-group').addClass('has-error');
+                },
+                unhighlight: function(element, errorClass, validClass) {
+                    $(element).parents('.form-group').removeClass('has-error');
+                    $(element).parents('.form-group').addClass('has-success');
+                }
+            });
+
+            if ($("#register_form").valid()) {
+                var data1 = $('#register_form').serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "registerUser.php",
+                    data: data1,
+                    success: function(msg) {
+                        console.log(msg);
+                        $('.messagebox').hide();
+          $('#alert-message').html(msg);
+           $('.messagebox').slideDown('slow');
                     }
-         },
-        messages: {
-         username: {
-           required: "Ingrese su correo "
-                   },
-           password: {
-              required: "&nbsp; &nbsp; &nbsp; Ingrese su password ",
-              minlength: "El Password tiene que contener 6 caracteres"
-                     },
-       },
-
-
-
-        errorPlacement: function(error, element) {
-          error.hide();
-          $('.messagebox').hide();
-          error.appendTo($('#alert-message'));
-          $('.messagebox').slideDown('slow');
-        },
-        highlight: function(element, errorClass, validClass) {
-          $(element).parents('.form-group').addClass('has-error');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-          $(element).parents('.form-group').removeClass('has-error');
-          $(element).parents('.form-group').addClass('has-success');
-        }
-    });
-
-      $("#login_form").submit(function() {
-      $('.social').hide('slow');
-              if ($("#login_form").valid()) {
-      $('.messagebox').slideUp('slow');
-                  var data1 = $('#login_form').serialize();
-        $("button").button('loading');
-                  $.ajax({
-                      type: "POST",
-                      url: "login.php",
-                      data: data1,
-          dataType: 'json',
-                      success: function(msg) {
-                          if (msg.result == 1) {
-            $('.messagebox').addClass("success-message");
-            $('.message').slideDown('slow');
-            $('#alert-message').text("Logged in.. Redirecting");
-
-                              $('#login_form').fadeOut(5000);
-
-                              window.location = "index-2.html"
-                          } else {
-            $("button").button('reset');
-            console.log(msg.result);
-            $('.messagebox').hide();
-            $('.messagebox').addClass("error-message");
-            $('#alert-message').html(msg.result);
-             $('.messagebox').slideDown('slow');
+                });
             }
-                      },
-          error: function(msg){
-            $("button").button('reset');
-            $('.messagebox').hide();
-            $('.messagebox').addClass("error-message");
-            $('#alert-message').html(msg.result);
-             $('.messagebox').slideDown('slow');
-          }
-                  });
-              }
-              return false;
-          });
-
-      });
-
-
-  </script> -->
-
-
+            return false;
+        });
+    });
+</script>
 <!-- fin de contenido login -->
 
 <div class="bot1_wrapper">
@@ -530,6 +538,13 @@ $("#login_form").validate({
 </div>
 
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 </body>
 
 </html>

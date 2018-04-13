@@ -53,15 +53,13 @@
 
         </ul>
         <ul class="social clearfix">
-<<<<<<< HEAD:index.php
+
           <!-- <li class="fa fa-sign-in" aria-hidden="true"><a href="login.php">Ingresa</a></li> -->
           <!-- <li class="fa fa-sign-out">Registrate</li> -->
           <li ><a style="color: #acacac; font-size: 11pt;" href="login.php">Ingresa</a></li>
           <li ><a style="color: #acacac; font-size: 11pt;" href="registration_form.php">Registrate</a></li>
-=======
-          <li class="fa fa-sign-in" aria-hidden="true">Ingresa</li>
-          <li class="fa fa-sign-out">Registrate</li>
->>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
+
+
           <li><a href="https://www.facebook.com/maravillasdeleden/"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/maravillas_eden"><i class="fa fa-twitter"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UCCBXBbXfMHm71qW4MfnsmNQ"><i class="fa fa-youtube"></i></a></li>
@@ -975,11 +973,10 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
     <div class="row">
       <div class="col-sm-3">
         <div class="logo2_wrapper">
-<<<<<<< HEAD:index.php
+
           <a href="index.php" class="logo2">
-=======
+
           <a href="index-2.html" class="logo2">
->>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
             <img src="images/logox.png" alt="" class="img-responsive">
           </a>
         </div>
@@ -1038,11 +1035,8 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
   </div>
 </div>
 </div>
-<<<<<<< HEAD:index.php
-<div >
 
-=======
->>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
+<div >
 <div class="row">
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: 90%;">
@@ -1146,7 +1140,7 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
         </p>
         <p class="text-justify">
           Queremos que te sientas seguro al usar este sitio web para hacer reservaciones de hoteles y viajes, de modo que tenemos el compromiso de proteger la información que reunimos. Aunque ningún sitio web puede garantizar la seguridad, hemos implementado procedimientos administrativos, técnicos y de seguridad física adecuados para ayudar a proteger la información personal que nos proporcionas. Por ejemplo, únicamente los empleados autorizados tienen permitido obtener acceso a la información personal y solo pueden hacerlo para funciones comerciales autorizadas. Además, al transmitir tu información personal delicada entre tu sistema y el nuestro utilizamos un método de cifrado, y empleamos firewalls y sistemas de detección de intrusiones como ayuda para prevenir que personas no autorizadas obtengan acceso a tu información.
-<<<<<<< HEAD:index.php
+
 
           Para ayudarnos a reconocer a tu navegador como un visitante previo y para guardar y recordar cualquier preferencia que hubiere sido seleccionada mientras tu navegador nos visitaba. Por ejemplo, si te inscribes en nuestro sitio, podemos usar cookies para recordar tu información de registro, para que no tengas que registrarte en nuestro sitio cada vez que nos visites. Asimismo, podemos almacenar tu contraseña en una cookie, en caso que hayas seleccionado la opción “Mantener la sesión abierta”. Toma en cuenta que por razones de seguridad la identificación de los socios, contraseñas y cualquier otra información almacenada en las cookies se encuentra encriptada. Salvo que te des de alta con nosotros, estas cookies no contendrán información personal.
           Para ayudarnos a personalizar el contenido y publicidad proporcionada en este y otros sitios. Por ejemplo, cuando ingresas a una página en nuestro sitio, automáticamente se establece una cookie, ya sea por nosotros, nuestros proveedores o socios comerciales, para reconocer tu navegador mientras navegas por internet, para presentarte información y publicidad basada en tus intereses aparentes. Para mayor información relacionada con nuestras prácticas de publicidad en línea y tus opciones al respecto, consulta la sección.
@@ -1294,9 +1288,9 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
   </div>
 </div>
 
-<<<<<<< HEAD:index.php
+
 </div>
-=======
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -1306,17 +1300,8 @@ escuchar sus necesidades, encontrar la solución a ellas es nuestro motor que no
 </div>
 </div>
 
-
->>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
-
-
-
-
-<<<<<<< HEAD:index.php
 </div>
 
-=======
->>>>>>> c260ca4ee32d7dc226d5c561d8f6d9ff9cf0148e:index.html
 <script src="js/bootstrap.min.js"></script>
 </body>
 
