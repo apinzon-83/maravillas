@@ -407,7 +407,7 @@ $("#register_form").submit(function() {
                     url: "registerUser.php",
                     data: data1,
                     success: function(msg) {
-                        console.log(msg);
+                        
                         $('.messagebox').hide();
           $('#alert-message').html(msg);
            $('.messagebox').slideDown('slow');
